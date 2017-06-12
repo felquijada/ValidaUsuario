@@ -1,3 +1,7 @@
+<?php
+    
+?>
+
 <!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
@@ -11,7 +15,17 @@ and open the template in the editor.
     </head>
     <body>
         <?php
-        
+            if(!isset($_SESSION["USR"])){
+              
+        ?>
+        <form action="<?php=URL?>/controlador/valida.php" method="post">
+            <input type="text" name="nomusu">
+            <input type="password" name="claveusu">
+            <input type="submit" value="Acceder">
+            
+        </form>
+        <?php
+            }
         ?>
     </body>
 </html>
