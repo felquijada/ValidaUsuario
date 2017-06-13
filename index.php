@@ -1,5 +1,6 @@
 <?php
-    
+    include 'librerias.php';
+    session_start();
 ?>
 
 <!DOCTYPE html>
@@ -18,10 +19,10 @@ and open the template in the editor.
             if(!isset($_SESSION["USR"])){
               
         ?>
-        <form action="<?php=URL?>/controlador/valida.php" method="post">
-            <input type="text" name="nomusu">
-            <input type="password" name="claveusu">
-            <input type="submit" value="Acceder">
+        <form action="<?=URL?>/controlador/valida.php" method="post">
+            <div><label>Nombre :</label><input type="text" name="nomusu"></div>
+            <div><label>Clave :</label><input type="password" name="claveusu"></div>
+            <div><input type="submit" value="Acceder"></div>
             
         </form>
         <?php

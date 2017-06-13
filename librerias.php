@@ -1,6 +1,6 @@
 <?php
 
-include 'constantes.php';
+include 'Constantes.php';
 include PATH.'/lib/Conexion.php';
 include PATH.'/lib/Usuario.php';
 /* 
